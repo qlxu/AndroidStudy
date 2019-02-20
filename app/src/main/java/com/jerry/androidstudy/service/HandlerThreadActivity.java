@@ -2,6 +2,7 @@ package com.jerry.androidstudy.service;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -9,6 +10,9 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.jerry.androidstudy.R;
@@ -18,8 +22,10 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+
 public class HandlerThreadActivity extends Activity {
 
+    private String TAG = this.getClass().getSimpleName();
 
     private ImageView imageIV;
     private String url[]={
@@ -50,6 +56,24 @@ public class HandlerThreadActivity extends Activity {
         for(int i=0;i<7;i++){
             childHandler.sendEmptyMessageDelayed(i,100*i);
         }
+
+        imageIV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(TAG,"imageIV onclick");
+            }
+        });
+    }
+
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        return super.onTouchEvent(event);
+    }
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return super.dispatchTouchEvent(ev);
     }
 
     /**
