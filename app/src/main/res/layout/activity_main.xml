@@ -19,10 +19,17 @@
         />
 
     <TextView
-        android:id="@+id/serviceTest"
+    android:id="@+id/serviceTest"
+    android:layout_width="200dp"
+    android:layout_height="100dp"
+    android:text="service测试"
+    />
+
+    <TextView
+        android:id="@+id/customViewTV"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:text="service测试"
+        android:text="customView"
         />
 <!--</ScrollView>-->
 

@@ -9,8 +9,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.jerry.androidstudy.javareview.Dog;
 import com.jerry.androidstudy.service.HandlerThreadActivity;
 import com.jerry.androidstudy.service.MyService;
+import com.jerry.androidstudy.widget.CustomViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,6 +50,17 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 }, Context.BIND_AUTO_CREATE);
+            }
+        });
+
+        findViewById(R.id.customViewTV).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CustomViewActivity.class));
+
+                Dog dog = new Dog();
+                int dogAge = dog.age;
+                dog.increaseAge();
             }
         });
     }

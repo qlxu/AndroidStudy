@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".service.HandlerThreadActivity"/>
 
+        <activity android:name=".widget.CustomViewActivity"/>
+
         <service android:name=".service.MyService"/>
     </application>
 
