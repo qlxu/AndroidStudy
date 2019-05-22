@@ -21,8 +21,11 @@
         <activity android:name=".service.HandlerThreadActivity"/>
 
         <activity android:name=".widget.CustomViewActivity"/>
+        <activity android:name=".databinding.DataBingdingActivity"/>
 
         <service android:name=".service.MyService"/>
+        <activity android:name=".ui.ClearEditViewTestActivity"/>
+        <activity android:name=".ui.SplashActivity"/>
     </application>
 
 </manifest>

@@ -9,9 +9,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.jerry.androidstudy.databinding.DataBingdingActivity;
 import com.jerry.androidstudy.javareview.Dog;
 import com.jerry.androidstudy.service.HandlerThreadActivity;
 import com.jerry.androidstudy.service.MyService;
+import com.jerry.androidstudy.ui.ClearEditViewTestActivity;
+import com.jerry.androidstudy.ui.SplashActivity;
 import com.jerry.androidstudy.widget.CustomViewActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 bindService(intent, new ServiceConnection() {
                     @Override
                     public void onServiceConnected(ComponentName name, IBinder service) {
-                        MyService.MyBind myBind = (MyService.MyBind) service;
-                        MyService myService = myBind.getService();
+//                        MyService.MyBind myBind = (MyService.MyBind) service;
+//                        MyService myService = myBind.getService();
                     }
 
                     @Override
@@ -61,6 +64,28 @@ public class MainActivity extends AppCompatActivity {
                 Dog dog = new Dog();
                 int dogAge = dog.age;
                 dog.increaseAge();
+            }
+        });
+
+        findViewById(R.id.dataBindingTV).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(MainActivity.this,DataBingdingActivity.class));
+            }
+        });
+
+        findViewById(R.id.clearEditViewTV).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ClearEditViewTestActivity.class));
+            }
+        });
+
+        findViewById(R.id.splashTextTV).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SplashActivity.class));
             }
         });
     }

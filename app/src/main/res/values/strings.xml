@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AndroidStudy</string>
+    <string name="text_1">test_1</string>
+    <string name="text_2">text_2</string>
+    <string name="text_3">text_3</string>
+    <string name="text_4">text_4</string>
+    <string name="text_5">text_5</string>
+    <string name="text_6">text_6</string>
 </resources>

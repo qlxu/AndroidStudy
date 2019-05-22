@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     >
 
@@ -31,6 +36,29 @@
         android:layout_height="100dp"
         android:text="customView"
         />
+
+    <TextView
+        android:id="@+id/dataBindingTV"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="dataBinding"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/clearEditViewTV"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="clearEditView"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/splashTextTV"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="splashText"
+        android:gravity="center"
+        />
 <!--</ScrollView>-->
 
 </LinearLayout>
+</ScrollView>
