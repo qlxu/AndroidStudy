@@ -21,6 +21,7 @@
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:text="handlerThrea测试"
+        android:visibility="gone"
         />
 
     <TextView
@@ -28,6 +29,7 @@
     android:layout_width="200dp"
     android:layout_height="100dp"
     android:text="service测试"
+    android:visibility="gone"
     />
 
     <TextView
@@ -56,6 +58,20 @@
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:text="splashText"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/welcomeTextTV"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="welcomeText"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/gifShowTV"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="gifShowText"
         android:gravity="center"
         />
 <!--</ScrollView>-->

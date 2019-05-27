@@ -26,6 +26,14 @@
         <service android:name=".service.MyService"/>
         <activity android:name=".ui.ClearEditViewTestActivity"/>
         <activity android:name=".ui.SplashActivity"/>
+        <activity android:name=".ui.WecomeActivity"/>
+        <activity android:name=".ui.ShowGifActivity"/>
+
+        <meta-data android:name="design_width" android:value="1080">
+        </meta-data>
+        <meta-data android:name="design_height" android:value="1920">
+        </meta-data>
+
     </application>
 
 </manifest>

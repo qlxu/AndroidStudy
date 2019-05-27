@@ -14,7 +14,9 @@ import com.jerry.androidstudy.javareview.Dog;
 import com.jerry.androidstudy.service.HandlerThreadActivity;
 import com.jerry.androidstudy.service.MyService;
 import com.jerry.androidstudy.ui.ClearEditViewTestActivity;
+import com.jerry.androidstudy.ui.ShowGifActivity;
 import com.jerry.androidstudy.ui.SplashActivity;
+import com.jerry.androidstudy.ui.WecomeActivity;
 import com.jerry.androidstudy.widget.CustomViewActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -86,6 +88,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SplashActivity.class));
+            }
+        });
+
+        findViewById(R.id.welcomeTextTV).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, WecomeActivity.class));
+            }
+        });
+
+        findViewById(R.id.gifShowTV).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ShowGifActivity.class));
             }
         });
     }

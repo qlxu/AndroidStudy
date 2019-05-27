@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="445"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:src="@mipmap/test1"
+        app:a_in="1"
+        app:a_out="0"
+        app:x_in="0.5"
+        app:x_out="1"
+        />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="435"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical"-->
+        <!--app:a_in="1"-->
+        <!--app:a_out="0"-->
+        <!--app:x_in="0.5"-->
+        <!--app:x_out="1"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="127"-->
+            <!--/>-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="230"-->
+            <!--&gt;-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="435"
+            app:a_in="1"
+            app:a_out="0"
+            >
+
+            <TextView
+                android:id="@+id/contentTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="领导看板、块数据展示"
+                android:textSize="10sp"
+                android:textColor="#666666"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/tipTV"
+                android:layout_above="@+id/contentTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="综合统计"
+                android:layout_marginBottom="10dp"
+                android:textSize="26sp"
+                android:textColor="#1F8EFF"
+                android:layout_centerHorizontal="true"
+                />
+
+            <LinearLayout
+                android:id="@+id/dotLL"
+                android:layout_width="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_dot_selected"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_dot_unselect"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_dot_unselect"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="78"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+</LinearLayout>
+

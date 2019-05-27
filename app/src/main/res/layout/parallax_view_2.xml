@@ -4,24 +4,16 @@
               android:layout_height="match_parent"
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
+              android:gravity="center"
     >
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:x_in="0.1"
-        app:x_out="0.1"
-        app:y_in="0.1"
-        app:y_out="0.1"
-        android:text="@string/text_3"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:x_in="0.1"
-        app:x_out="0.1"
-        app:y_in="0.1"
-        app:y_out="0.1"
-        android:text="@string/text_4"
+        app:x_in="0.5"
+        app:x_out="1"
+        app:a_in="1"
+        app:a_out="0"
+        android:src="@mipmap/icon_second_1"
         />
 </LinearLayout>

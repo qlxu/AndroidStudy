@@ -31,4 +31,7 @@ dependencies {
 
     implementation 'com.alibaba:fastjson:1.2.57'
     implementation 'com.github.prolificinteractive:ParallaxPager:3.0.0'
+    implementation 'cn.bingoogolapple:bga-banner:2.2.6@aar'
+    implementation 'com.zhy:autolayout:1.4.5'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.16'
 }
